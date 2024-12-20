@@ -78,7 +78,7 @@ export default function Intro() {
                         className=' opacity-70 group-hover:translate-x-2 transition' />
                 </Link>
 
-                <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 shadow-md' href='/PRANAVK.pdf' download={true}>
+                <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 shadow-md' href='/PranavK.pdf' download={true}>
                     Download CV <HiDownload
                         className='opacity- group-hover:translate-y-1 transition'
                     />
