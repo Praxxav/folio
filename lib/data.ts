@@ -7,7 +7,7 @@ import paytmSingup from "@/public/Paytm_singup.png";
 import nural from "@/public/nural.jpg";
 import medium from "@/public/blog.png";
 import seed from "@/public/php-encryption.jpg";
-import trade from "@/public/futuristic-stock-exchange.jpg";
+
 
 export const links = [
     { name: "Home", hash: "#home" },
@@ -90,18 +90,16 @@ export const projectsData = [
         tags: ["React", "Ethers.js", "BIP39", "Web3"],
         imageUrl: seed,
     },
-    {
-        title: "Prop-Firm - Under Production",
-        description:
-            "Building a prop firm that equips traders with cutting-edge tools for high-frequency, data-driven trading. Our platform leverages advanced tech to maximize performance, risk management, and seamless trading execution.",
-        tags: ["Nextjs", "Tailwind", "OAuth", "Redis", "Binance API", "BCryptJs"],
-        imageUrl: trade,
-    },
+  
 ] as const;
 
 export const skillsData = [
-    "HTML", "CSS", "JavaScript", "TypeScript", "React", "Node.js", "Git", "Tailwind", "Prisma", "MongoDB",
-    "Docker", "Express", "Framer Motion", "PostgreSQL", "Cloudflare", "Hono", "Python", "FastAPI",
-    "Data Structures & Algorithm", "Machine Learning", "Object-Oriented Programming", "Redis", "Data Analytics",
-    "Web3",
-] as const;
+    "AWS Services (S3, Lambda, EC2, IAM, CloudWatch, Glue, Athena, RDS,VPC)", "ETL pipeline development","HTML", "CSS", "JavaScript", "TypeScript", "React", "Node.js", "Git", "Tailwind", "Prisma", "MongoDB",
+    "Docker", "Express", "Framer Motion", "PostgreSQL", "Cloudflare", "Hono",
+    
+    "Linux Administration", "Shell Scripting", "Machine Learning"
+    , "Data Analytics", "Web3", "CI/CD Processes",
+    "Auto Scaling Groups"
+    ] as const;
+    
+    
