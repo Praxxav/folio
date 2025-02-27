@@ -19,6 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className=' scroll-smooth'>
+      <head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5355978764450307"
+     crossOrigin="anonymous"></script>
+      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 h-[6000px]`}
       >
