@@ -7,6 +7,7 @@ import paytmSingup from "@/public/Paytm_singup.png";
 import nural from "@/public/nural.jpg";
 import medium from "@/public/blog.png";
 import seed from "@/public/php-encryption.jpg";
+import prop from "@/public/prop1.jpeg";
 
 
 export const links = [
@@ -63,11 +64,20 @@ export const experiencesData = [
 
 export const projectsData = [
     {
+        title: "PropTradx-Prop trading platform",
+        description:
+            "Features user sign-up, log-in, with OAuth validation, balance checks, fund transfers, and transaction views. Utilizes React for the frontend and Express.js for the backend.",
+        tags: ["NextJs", "NodeJs", "Postgresql", "Tailwind", "OAuth",],
+        imageUrl: prop,
+        link: "https://proptradx.netlify.app/",
+    },
+    {
         title: "Paytm Clone - Full-Stack Application",
         description:
             "Features user sign-up, log-in, with OAuth validation, balance checks, fund transfers, and transaction views. Utilizes React for the frontend and Express.js for the backend.",
         tags: ["React", "Node", "MongoDB", "Tailwind", "Express.js", "JWT Authentication"],
         imageUrl: paytmSingup,
+        link: "https://github.com/Praxxav/paytm_wallet",
     },
     {
         title: "Neural-Nexus",
@@ -75,6 +85,7 @@ export const projectsData = [
             "Nuro! bot that can converse about anything! Can check answers of a topic! Can play Rock-paper-Scissors, Toss - Heads or Tails.",
         tags: ["Machine Learning", "LangChain", "Python", "LLMs", "SQL(Postgres)", "pycord", "alembic"],
         imageUrl: nural,
+        link: "https://github.com/Praxxav/Nuro",
     },
     {
         title: "Blogz for Devs- Inspired by Medium",
@@ -82,6 +93,7 @@ export const projectsData = [
             "Blogging Platform Offers - Signin, Signup, Users can Create, Read, Update, Delete their blogs.",
         tags: ["Cloudflare Workers", "TypeScript", "Hono", "Prisma", "Postgres", "JWT"],
         imageUrl: medium,
+        link: "https://github.com/Praxxav/Medium-blogs",
     },
     {
         title: "EthWallet - Ethereum & Solana HD Wallet Generator",
@@ -89,8 +101,9 @@ export const projectsData = [
             "Generating and managing Ethereum and Solana HD wallets from a mnemonic phrase.",
         tags: ["React", "Ethers.js", "BIP39", "Web3"],
         imageUrl: seed,
+        link: "https://memonic-phrase-to-wallet.vercel.app/",
     },
-  
+    
 ] as const;
 
 export const skillsData = [
