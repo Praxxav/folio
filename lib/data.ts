@@ -66,7 +66,7 @@ export const projectsData = [
     {
         title: "PropTradx-Prop trading platform",
         description:
-            "Features user sign-up, log-in, with OAuth validation, balance checks, fund transfers, and transaction views. Utilizes React for the frontend and Express.js for the backend.",
+            "PropTradX is a proprietary trading platform for Forex, Crypto, and Commodities with a simulated funding model. Built using Next.js, Node.js (TypeScript), and PostgreSQL (Prisma) and secure payment processing.",
         tags: ["NextJs", "NodeJs", "Postgresql", "Tailwind", "OAuth",],
         imageUrl: prop,
         link: "https://proptradx.netlify.app/",
