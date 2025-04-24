@@ -18,6 +18,9 @@ export const links = [
     { name: "Experience", hash: "#experience" },
     { name: "Contact", hash: "#contact" },
 ] as const;
+    
+
+
 
 export const experiencesData = [
     {
@@ -66,7 +69,7 @@ export const projectsData = [
     {
         title: "PropTradx-Prop trading platform",
         description:
-            "PropTradX is a proprietary trading platform for Forex, Crypto, and Commodities with a simulated funding model. Built using Next.js, Node.js (TypeScript), and PostgreSQL (Prisma) and secure payment processing.",
+            "PropTradX is a proprietary trading platform for Forex, Crypto, and Commodities with a simulated funding model. Built using Next.js, Node.js (TypeScript), and PostgreSQL (Prisma) and secure payment processing.& Authentication using OAuth.",
         tags: ["NextJs", "NodeJs", "Postgresql", "Tailwind", "OAuth",],
         imageUrl: prop,
         link: "https://proptradx.netlify.app/",
