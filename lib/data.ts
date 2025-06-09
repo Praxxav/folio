@@ -10,6 +10,7 @@ import seed from "@/public/php-encryption.jpg";
 import prop from "@/public/prop1.jpeg";
 
 
+
 export const links = [
     { name: "Home", hash: "#home" },
     { name: "About", hash: "#about" },
@@ -69,10 +70,11 @@ export const projectsData = [
     {
         title: "PropTradx-Prop trading platform",
         description:
-            "PropTradX is a proprietary trading platform for Forex, Crypto, and Commodities with a simulated funding model. Built using Next.js, Node.js (TypeScript), and PostgreSQL (Prisma) and secure payment processing.& Authentication using OAuth.",
-        tags: ["NextJs", "NodeJs", "Postgresql", "Tailwind", "OAuth",],
+            "PropTradX is a proprietary trading platform for Forex a simulated funding model.",
+        tags: ["NextJs", "NodeJs", "Postgresql", "Tailwind", "OAuth","razorpay"],
         imageUrl: prop,
         link: "https://proptradx.netlify.app/",
+        githuburl:""
     },
     {
         title: "Paytm Clone - Full-Stack Application",
@@ -81,6 +83,7 @@ export const projectsData = [
         tags: ["Nextjs", "Node", "Postgresql", "Tailwind", "Prisma", "Oauth",""],
         imageUrl: paytmSingup,
         link: "https://github.com/Praxxav/paytm_wallet",
+         githuburl:""
     },
     {
         title: "Neural-Nexus",
@@ -89,6 +92,7 @@ export const projectsData = [
         tags: ["Machine Learning", "LangChain", "Python", "LLMs", "SQL(Postgres)", "pycord", "alembic"],
         imageUrl: nural,
         link: "https://github.com/Praxxav/Nuro",
+         githuburl:""
     },
     {
         title: "Blogz for Devs- Inspired by Medium",
@@ -97,6 +101,7 @@ export const projectsData = [
         tags: ["Cloudflare Workers", "TypeScript", "Hono", "Prisma", "Postgres", "JWT"],
         imageUrl: medium,
         link: "https://github.com/Praxxav/Medium-blogs",
+         githuburl:""
     },
     {
         title: "EthWallet - Ethereum & Solana HD Wallet Generator",
@@ -105,12 +110,13 @@ export const projectsData = [
         tags: ["React", "Ethers.js", "BIP39", "Web3"],
         imageUrl: seed,
         link: "https://memonic-phrase-to-wallet.vercel.app/",
+         githuburl:""
     },
     
 ] as const;
 
 export const skillsData = [
-    "AWS Services (S3, Lambda, EC2, IAM, CloudWatch, Glue, Athena, RDS,VPC)", "ETL pipeline development","HTML", "CSS", "JavaScript", "TypeScript", "React", "Node.js", "Git", "Tailwind", "Prisma", "MongoDB",
+    "AWS Services (S3, Lambda, EC2, IAM, CloudWatch, Glue, Athena, RDS,VPC)","HTML", "CSS", "JavaScript", "TypeScript", "React", "Node.js", "Git", "Tailwind", "Prisma", "MongoDB",
     "Docker", "Express", "Framer Motion", "PostgreSQL", "Cloudflare", "Hono",
     
     "Linux Administration", "Shell Scripting", "Machine Learning"

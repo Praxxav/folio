@@ -25,8 +25,8 @@ export default function Intro() {
                     >
                         { <Image src={selfPotrait}
                             alt="Pranav Kulkarni"
-                            width="384"
-                            height="384"
+                            width="192"
+                            height="192"
                             priority={true}
                             quality="95"
                             className=' object-cover h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl'
