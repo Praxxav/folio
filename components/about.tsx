@@ -19,18 +19,38 @@ export default function About() {
             }}
             id='about'
         >
-            <SectionHeader>About me</SectionHeader>
-            <div className="mb-3 sm:mx-2 mx-6 sm:text-center text-justify">
-                <p>
-                    By day, I’m a <span className="font-medium">Certified AWS Engineer</span> and Full Stack Developer with expertise in building scalable web applications and cloud infrastructure. I am currently pursuing a Bachelor’s of Engineering at <span className="font-medium">International Institute of Information Technology (I²IT), Pune</span>. 
-                    <br />
-                    My professional experience includes managing data engineering projects using <span className="font-medium">AWS services</span> such as S3, Lambda, EC2, IAM, and Glue. I’ve designed serverless data pipelines for real-time processing and architected multi-tier web applications integrating services like CloudFront, RDS, and Auto Scaling Groups.
-                    <br />
-                    My projects include a <span className="italic">Full Stack Paytm Payment application</span>, a user-friendly payment gateway for merchants, and a blogging platform with complete CRUD functionality. Additionally, I’ve developed <span className="italic">Nuro</span>, an AI-driven chatbot, and led teams in delivering innovative solutions.
-                    <br />
-                    My core skills span <span className="font-medium">AWS Cloud, ETL pipelines, Linux systems, SQL, and Full Stack Development</span>. I am passionate about leveraging technology to optimize processes, solve real-world challenges, and drive innovation.
-                </p>
-            </div>
+<SectionHeader>About me</SectionHeader>
+<div className="mb-3 sm:mx-2 mx-6 sm:text-center text-justify">
+  <p>
+    I’m a{" "}
+    <span className="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text font-bold whitespace-nowrap">
+      Full Stack Developer
+    </span>{" "}
+    and{" "}
+    <span className="inline-block bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-transparent bg-clip-text font-bold whitespace-nowrap">
+      AWS Cloud Enthusiast
+    </span>{" "}
+    with hands-on experience in building scalable web applications and cloud infrastructure. I&apos;m  currently pursuing a Bachelor of Engineering in Information Technology at the{" "}
+    <span className="font-medium">International Institute of Information Technology (I²IT), Pune</span>, with a strong academic record (CGPA: 8.19).
+    <br />
+    <br />
+    My expertise includes deploying{" "}
+    <span className="font-medium">multi-tier web applications</span> using AWS services like{" "}
+    <span className="font-medium">EC2, S3, CloudFront, Auto Scaling, and RDS</span>. I&apos;ve  fine-tuned infrastructure with Nginx and optimized performance using load balancing and CDN integrations.
+    <br />
+    <br />
+    I’ve developed projects such as{" "}
+    <span className="italic">PropTradX</span>, a proprietary trading platform enabling simulated trading in Forex and Crypto with Razorpay integration, and{" "}
+    <span className="italic">Wallet</span>, a full-stack Paytm-style payment app featuring balance checks, fund transfers, and webhooks.
+    <br />
+    <br />
+    My tech stack includes{" "}
+    <span className="inline-block bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 text-transparent bg-clip-text font-bold whitespace-nowrap">
+      TypeScript, React, Next.js, Node.js, PostgreSQL, AWS, Docker
+    </span>. I’m passionate about creating impactful solutions, automating infrastructure, and contributing to high-performance applications.
+  </p>
+</div>
+
         </motion.section>
     )
 }

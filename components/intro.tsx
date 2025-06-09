@@ -46,20 +46,19 @@ export default function Intro() {
                     </motion.span>
                 </div>
             </div>
-
-            <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-            >
-                <span className="font-bold">Hey, I’m Pranav kulkarni</span>, a{" "}
-                <span className="font-bold"> a Certified AWS Engineer </span> and{" "}
-                <span className="font-bold">and Full Stack Developer</span> with a knack for{" "}
-                <span className="font-bold">solving real-world problems</span>.
-                <br />
-               
-                <br />
-               
-            </motion.h1>
+<motion.h1
+  className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
+  initial={{ opacity: 0, y: 100 }}
+  animate={{ opacity: 1, y: 0 }}
+>
+  <span className="font-bold">Hi, I’m Pranav Kulkarni</span> —{" "}
+  <span className="font-bold inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text whitespace-nowrap">
+    Full Stack Developer
+  </span>{" "}
+  passionate about{" "}
+  <span className="font-bold">building scalable systems</span> and crafting{" "}
+  <span className="font-bold">impactful digital experiences</span>.
+</motion.h1>
 
             <motion.div
                 className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'

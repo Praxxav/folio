@@ -77,8 +77,8 @@ export const projectsData = [
     {
         title: "Paytm Clone - Full-Stack Application",
         description:
-            "Features user sign-up, log-in, with OAuth validation, balance checks, fund transfers, and transaction views. Utilizes React for the frontend and Express.js for the backend.",
-        tags: ["React", "Node", "MongoDB", "Tailwind", "Express.js", "JWT Authentication"],
+            "Features user sign-up, log-in, with OAuth validation, balance checks, fund transfers, and transaction views. Utilizes Nextjs, webpacks",
+        tags: ["Nextjs", "Node", "Postgresql", "Tailwind", "Prisma", "Oauth",""],
         imageUrl: paytmSingup,
         link: "https://github.com/Praxxav/paytm_wallet",
     },

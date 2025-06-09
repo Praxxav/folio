@@ -22,7 +22,8 @@ export default function About() {
     // }, [inView, setActiveSection, timeOfLastClick]);
     return (
         <section ref={ref} id='projects' className='scroll-mt-28 mb-28'>
-            <SectionHeader>My projects</SectionHeader>
+            <SectionHeader ><div className='text-2xl sm:text-3xl font-sans text-gray-950'>
+                CAPSTONE PROJECTS</div></SectionHeader>
             <div className='sm:mx-2 mx-6'>
                 {projectsData.map((project, index) => (
                     <React.Fragment key={index}>
