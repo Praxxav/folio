@@ -27,10 +27,14 @@ export default function About() {
             Full Stack Developer
           </span>{" "}
           and{" "}
-          <span className="font-medium">AWS Cloud Enthusiast</span> with hands-on experience in building scalable web applications and cloud infrastructure. I&apos;m currently pursuing a Bachelor of Engineering in Information Technology at the{" "}
-          <span className="font-medium">International Institute of Information Technology (I²IT), Pune</span>, with a strong academic record (CGPA: 8.19).
+          <span className="font-medium">AWS Cloud Enthusiast</span> with hands-on experience in building scalable web applications and cloud infrastructure. I&apos;m in my final year of Bachelor of Engineering in Information Technology at the{" "}
+          <span className="font-medium">International Institute of Information Technology (I²IT), Pune</span>, with a strong academic record (CGPA: 8.52).
           <br />
           <br />
+          I have also worked as an Intern at <span className="font-bold">Skylark Labs</span>, where I developed AI-powered authentication and real-time face detection systems, integrating Django REST, WebRTC, and RTSP to enhance video streaming experiences.
+          <br />
+          <br />
+
           My expertise includes deploying multi-tier web applications using{" "}
           <span className="font-medium">AWS services</span> like EC2, S3, CloudFront, Auto Scaling, and RDS. I&apos;ve fine-tuned infrastructure with Nginx and optimized performance using load balancing and CDN integrations.
           <br />

@@ -1,14 +1,14 @@
 import React from "react";
 import { FaAws,FaLock } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
-import { FaBlog, FaBots } from "react-icons/fa6";
+import { FaBarsProgress, FaBlog, FaBots } from "react-icons/fa6";
 
 import paytmSingup from "@/public/Paytm_singup.png";
 import nural from "@/public/nural.jpg";
 import medium from "@/public/blog.png";
 import seed from "@/public/php-encryption.jpg";
 import prop from "@/public/prop1.jpeg";
-
+import rtsp from "@/public/rtsp.jpg";
 
 
 export const links = [
@@ -24,6 +24,15 @@ export const links = [
 
 
 export const experiencesData = [
+    {
+        title: "SDE Intern - Skylark Labs",
+        location: "Pune, India",
+        description:
+            "Developed AI-powered authentication and real-time face detection systems, integrated with Django REST, WebRTC, and RTSP to enhance video streaming experiences.",
+        icon: React.createElement(FaBarsProgress),
+        date: "June - Aug 2025",
+    },
+    
     {
         title: "AWS- Data Engineering Internship",
         location: "Pune India",
@@ -67,6 +76,15 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "RTSP Face Detection System",
+        description:
+            "Developed AI-powered authentication and real-time face detection systems, integrated with Django REST,and RTSP to enhance video streaming experiences.",
+        tags: ["Python","Django Rest Framework", "RTSP","AI"],
+        imageUrl: rtsp,
+        link: "https://github.com/Praxxav/RTSP_face_detection",
+        githuburl:""
+    },
     {
         title: "PropTradx-Prop trading platform",
         description:
