@@ -39,7 +39,7 @@ export const Headers = () => {
                                 >
                                     {link.name}
                                     {link.name == activeSection && (
-                                        <motion.span className='absolute inset-0 -z-10 bg-gradient-to-r from-purple-500 to-red-400 rounded-full text-gray-950'
+                                        <motion.span className='absolute inset-0 -z-10 shadow-sm bg-gray-100 rounded-full text-gray-950'
                                             layoutId='activeSection'
                                             transition={{
                                                 type: 'spring',

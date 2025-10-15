@@ -24,10 +24,10 @@ export default function About() {
         <p>
           I&apos;m a{" "}
           <span className="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text font-bold whitespace-nowrap">
-            Full Stack Developer
+            Full Stack Engineer
           </span>{" "}
           and{" "}
-          <span className="font-medium">AWS Cloud Enthusiast</span> with hands-on experience in building scalable web applications and cloud infrastructure. I&apos;m in my final year of Bachelor of Engineering in Information Technology at the{" "}
+          <span className=" bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text font-bold whitespace-nowrap">Data Engineer</span> with hands-on experience in building scalable web applications and cloud infrastructure. I&apos;m in my final year of Bachelor of Engineering in Information Technology at the{" "}
           <span className="font-medium">International Institute of Information Technology (I²IT), Pune</span>, with a strong academic record (CGPA: 8.52).
           <br />
           <br />

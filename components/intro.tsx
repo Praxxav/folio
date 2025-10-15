@@ -55,7 +55,7 @@ export default function Intro() {
   <span className="font-bold inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text whitespace-nowrap">
     Full Stack Developer
   </span>{" "}
-  passionate about{" "}
+  passionate about {"Data Engineering "}
   <span className="font-bold">building scalable systems</span> and crafting{" "}
   <span className="font-bold">impactful digital experiences</span>.
 </motion.h1>

@@ -9,6 +9,7 @@ import medium from "@/public/blog.png";
 import seed from "@/public/php-encryption.jpg";
 import prop from "@/public/prop1.jpeg";
 import rtsp from "@/public/rtsp.jpg";
+import doc from "@/public/doc.jpg";
 
 
 export const links = [
@@ -76,6 +77,15 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+       {
+        title: "AI Powered Document Automation System",
+        description:
+            "Built a system to convert legal documents into reusable templates, extract key variables, and generate complete drafts via an intelligent chat-based workflow",
+        tags: ["Python","FastApi", "NextJs", "Gemini API","exa.ai"],
+        imageUrl: doc,
+        link: "https://github.com/Praxxav/AI-Powered-Document-Automation-backend",
+        githuburl:""
+    },
     {
         title: "RTSP Face Detection System",
         description:
