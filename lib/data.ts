@@ -25,6 +25,14 @@ export const links = [
 
 
 export const experiencesData = [
+        {
+        title: "FreeLancer - Technical Lead",
+        location: "Pune, India",
+        description:
+            "Lead development of MVP for startup, overseeing architecture, coding, and deployment. Collaborated with cross-functional teams to ensure timely delivery and alignment with business goals.",
+        icon: React.createElement(FaBarsProgress),
+        date: "Aug 2025 - Present",
+    },
     {
         title: "SDE Intern - Skylark Labs",
         location: "Pune, India",
