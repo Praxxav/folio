@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAws,FaLock } from "react-icons/fa";
+import { FaAws, FaLock } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
 import { FaBarsProgress, FaBlog, FaBots } from "react-icons/fa6";
 
@@ -20,13 +20,21 @@ export const links = [
     { name: "Experience", hash: "#experience" },
     { name: "Contact", hash: "#contact" },
 ] as const;
-    
+
 
 
 
 export const experiencesData = [
-        {
-        title: "FreeLancer - Full stack Developer",
+    {
+        title: "Prelexa - Document AI workflows",
+        location: "Pune, India",
+        description:
+            "Lead development of AI workflows for document automation, overseeing architecture, coding, and deployment. Collaborated with cross-functional teams to ensure timely delivery and alignment with business goals.",
+        icon: React.createElement(FaBarsProgress),
+        date: "Nov 2025 - Feb 2026",
+    },
+    {
+        title: "Trainee - Full stack Developer",
         location: "Pune, India",
         description:
             "Lead development of MVP for startup, overseeing architecture, coding, and deployment. Collaborated with cross-functional teams to ensure timely delivery and alignment with business goals.",
@@ -41,7 +49,7 @@ export const experiencesData = [
         icon: React.createElement(FaBarsProgress),
         date: "June - Aug 2025",
     },
-    
+
     {
         title: "AWS- Data Engineering Internship",
         location: "Pune India",
@@ -49,14 +57,6 @@ export const experiencesData = [
             "Pursuing a data engineering internship focused on building robust data pipelines, optimizing ETL processes, and supporting data-driven decision-making.",
         icon: React.createElement(FaAws),
         date: "July - Sep 2024",
-    },
-    {
-        title: "Neural Nexus",
-        location: "Pune India",
-        description:
-            "Developed bot that can converse about anything! Can check answers of a topic! Can play Rock-paper-Scissors, Toss - Heads or Tails",
-        icon: React.createElement(FaBots),
-        date: "Oct 2024 - Nov 2024",
     },
     {
         title: "Paytm Clone - Full-Stack Application",
@@ -85,41 +85,41 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
-       {
-        title: "AI Powered Document Automation System",
+    {
+        title: "Prelexa - Document AI workflows",
         description:
             "Built a system to convert legal documents into reusable templates, extract key variables, and generate complete drafts via an intelligent chat-based workflow",
-        tags: ["Python","FastApi", "NextJs", "Gemini API","exa.ai"],
+        tags: ["Python", "FastApi", "NextJs", "Gemini API", "exa.ai"],
         imageUrl: doc,
-        link: "https://github.com/Praxxav/AI-Powered-Document-Automation-backend",
-        githuburl:""
+        link: "https://www.prescalelabs.com",
+        githuburl: "https://github.com/Praxxav/prelexa-fe"
     },
     {
         title: "RTSP Face Detection System",
         description:
             "Developed AI-powered authentication and real-time face detection systems, integrated with Django REST,and RTSP to enhance video streaming experiences.",
-        tags: ["Python","Django Rest Framework", "RTSP","AI"],
+        tags: ["Python", "Django Rest Framework", "RTSP", "AI"],
         imageUrl: rtsp,
-        link: "https://github.com/Praxxav/RTSP_face_detection",
-        githuburl:""
+        link: "",
+        githuburl: "https://github.com/Praxxav/RTSP_face_detection"
     },
     {
         title: "PropTradx-Prop trading platform",
         description:
             "PropTradX is a proprietary trading platform for Forex a simulated funding model.",
-        tags: ["NextJs", "NodeJs", "Postgresql", "Tailwind", "OAuth","razorpay"],
+        tags: ["NextJs", "NodeJs", "Postgresql", "Tailwind", "OAuth", "razorpay"],
         imageUrl: prop,
         link: "https://proptradx.netlify.app/",
-        githuburl:""
+        githuburl: "https://github.com/Praxxav/PropTradx"
     },
     {
         title: "Paytm Clone - Full-Stack Application",
         description:
             "Features user sign-up, log-in, with OAuth validation, balance checks, fund transfers, and transaction views. Utilizes Nextjs, webpacks",
-        tags: ["Nextjs", "Node", "Postgresql", "Tailwind", "Prisma", "Oauth",""],
+        tags: ["Nextjs", "Node", "Postgresql", "Tailwind", "Prisma", "Oauth", ""],
         imageUrl: paytmSingup,
-        link: "https://github.com/Praxxav/paytm_wallet",
-         githuburl:""
+        link: "",
+        githuburl: "https://github.com/Praxxav/paytm_wallet"
     },
     {
         title: "Neural-Nexus",
@@ -127,8 +127,8 @@ export const projectsData = [
             "Nuro! bot that can converse about anything! Can check answers of a topic! Can play Rock-paper-Scissors, Toss - Heads or Tails.",
         tags: ["Machine Learning", "LangChain", "Python", "LLMs", "SQL(Postgres)", "pycord", "alembic"],
         imageUrl: nural,
-        link: "https://github.com/Praxxav/Nuro",
-         githuburl:""
+        link: "",
+        githuburl: "https://github.com/Praxxav/Nuro"
     },
     {
         title: "Blogz for Devs- Inspired by Medium",
@@ -136,8 +136,8 @@ export const projectsData = [
             "Blogging Platform Offers - Signin, Signup, Users can Create, Read, Update, Delete their blogs.",
         tags: ["Cloudflare Workers", "TypeScript", "Hono", "Prisma", "Postgres", "JWT"],
         imageUrl: medium,
-        link: "https://github.com/Praxxav/Medium-blogs",
-         githuburl:""
+        link: "",
+        githuburl: "https://github.com/Praxxav/Medium-blogs"
     },
     {
         title: "EthWallet - Ethereum & Solana HD Wallet Generator",
@@ -146,18 +146,16 @@ export const projectsData = [
         tags: ["React", "Ethers.js", "BIP39", "Web3"],
         imageUrl: seed,
         link: "https://memonic-phrase-to-wallet.vercel.app/",
-         githuburl:""
+        githuburl: ""
     },
-    
+
 ] as const;
 
 export const skillsData = [
-    "AWS Services (S3, Lambda, EC2, IAM, CloudWatch, Glue, Athena, RDS,VPC)","HTML", "CSS", "JavaScript", "TypeScript", "React", "Node.js", "Git", "Tailwind", "Prisma", "MongoDB",
-    "Docker", "Express", "Framer Motion", "PostgreSQL", "Cloudflare", "Hono",
-    
-    "Linux Administration", "Shell Scripting", "Machine Learning"
-    , "Data Analytics", "Web3", "CI/CD Processes",
-    "Auto Scaling Groups"
-    ] as const;
-    
-    
+    "TypeScript", "React", "Node.js", "Git", "Tailwind", "Prisma", "AWS Services (S3, Lambda, EC2, IAM, CloudWatch, Glue, Athena, RDS,VPC)", "HTML", "CSS", "JavaScript", "MongoDB",
+    "Docker", "Express", "Framer Motion", "PostgreSQL", "Cloudflare",
+
+    "Linux", "Shell Scripting", "Machine Learning",
+] as const;
+
+

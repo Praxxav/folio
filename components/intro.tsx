@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
- import selfPotrait from '@/public/pranav.jpeg'
+import selfPotrait from '@/public/pranav.jpeg'
 import Link from 'next/link'
 import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
@@ -23,14 +23,14 @@ export default function Intro() {
                             duration: 0.2
                         }}
                     >
-                        { <Image src={selfPotrait}
+                        {<Image src={selfPotrait}
                             alt="Pranav Kulkarni"
                             width="192"
                             height="192"
                             priority={true}
                             quality="95"
                             className=' object-cover h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl'
-                        /> }
+                        />}
                     </motion.div>
                     <motion.span className='absolute bottom-0 right-0 text-4xl'
                         initial={{ opacity: 0, scale: 0 }}
@@ -46,19 +46,18 @@ export default function Intro() {
                     </motion.span>
                 </div>
             </div>
-<motion.h1
-  className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
-  initial={{ opacity: 0, y: 100 }}
-  animate={{ opacity: 1, y: 0 }}
->
-  <span className="font-bold">Hi, I’m Pranav Kulkarni</span> —{" "}
-  <span className="font-bold inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text whitespace-nowrap">
-    Full Stack Developer
-  </span>{" "}
-  passionate about {"Data Engineering "}
-  <span className="font-bold">building scalable systems</span> and crafting{" "}
-  <span className="font-bold">impactful digital experiences</span>.
-</motion.h1>
+            <motion.h1
+                className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+            >
+                <span className="font-bold">Hi, I’m Pranav Kulkarni</span> —{" "}
+                <span className="font-bold inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text whitespace-nowrap">
+                    Full Stack Developer
+                </span>{" "}
+                <span className="font-bold">building scalable systems</span> and crafting{" "}
+                <span className="font-bold">impactful digital experiences</span>.
+            </motion.h1>
 
             <motion.div
                 className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'

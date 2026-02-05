@@ -26,8 +26,7 @@ export default function About() {
           <span className="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text font-bold whitespace-nowrap">
             Full Stack Engineer
           </span>{" "}
-          and{" "}
-          <span className=" bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text font-bold whitespace-nowrap">Data Engineer</span> with hands-on experience in building scalable web applications and cloud infrastructure. I&apos;m in my final year of Bachelor of Engineering in Information Technology at the{" "}
+          with hands-on experience in building scalable web applications and cloud infrastructure. I&apos;m in my final year of Bachelor of Engineering in Information Technology at the{" "}
           <span className="font-medium">International Institute of Information Technology (I²IT), Pune</span>, with a strong academic record (CGPA: 8.52).
           <br />
           <br />
@@ -40,6 +39,7 @@ export default function About() {
           <br />
           <br />
           I&apos;ve developed projects such as{" "}
+          <span className="italic">Prelexa</span>, an AI-powered document automation platform,{" "}
           <span className="italic">PropTradX</span>, a proprietary trading platform enabling simulated trading in Forex and Crypto with Razorpay integration, and{" "}
           <span className="italic">Wallet</span>, a full-stack Paytm-style payment app featuring balance checks, fund transfers, and webhooks.
           <br />
