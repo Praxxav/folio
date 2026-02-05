@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAws, FaLock } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
-import { FaBarsProgress, FaBlog, FaBots } from "react-icons/fa6";
+import { FaBarsProgress, FaBlog } from "react-icons/fa6";
 
 import paytmSingup from "@/public/Paytm_singup.png";
 import nural from "@/public/nural.jpg";
