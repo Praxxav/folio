@@ -10,12 +10,16 @@ const fadeInAnimationVariants = {
     initial: {
         opacity: 0,
         y: 100,
+        scale: 0.8,
     },
     animate: (index: number) => ({
         opacity: 1,
         y: 0,
+        scale: 1,
         transition: {
-             delay: 0.05 * index
+             delay: 0.05 * index,
+             type: 'spring',
+             stiffness: 200,
         }
     })
 }
@@ -35,8 +39,9 @@ export default function Skills() {
                         initial='initial'
                         whileInView='animate'
                         whileHover={{
-                            scale: 1.1,
-                            backgroundColor: '#E9D5FF'
+                            scale: 1.12,
+                            backgroundColor: '#CCFBF1',
+                            boxShadow: '0 4px 20px rgba(20, 184, 166, 0.25)',
                         }}
                         transition={{
                             type: 'spring',
@@ -45,7 +50,7 @@ export default function Skills() {
                         viewport={{
                             once: true
                         }}
-                        className='bg-white border-black rounded-xl shadow-sm px-5 py-3'
+                        className='bg-white border border-black/5 rounded-xl shadow-sm px-5 py-3 cursor-default'
                         custom={index}
                     >
                         {skill}

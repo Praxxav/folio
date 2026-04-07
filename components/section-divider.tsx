@@ -18,7 +18,7 @@ export default function SectionDivider() {
                 delay: 0.125,
             }}
             whileHover={{
-                background: 'linear-gradient(180deg, #f8cdda, #e0bbe4, #d1c4e9)',
+                background: 'linear-gradient(180deg, #3b82f6, #14b8a6, #22c55e)',
                 backgroundSize: '200% 200%',
                 backgroundPosition: ['0% 50%', '100% 50%'],
                 scale: [1, 1.2, 1.1],

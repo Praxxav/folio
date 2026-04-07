@@ -28,6 +28,7 @@ function Project({
 
   const scrollProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const rotateProgress = useTransform(scrollYProgress, [0, 1], [6, 0]);
 
   return (
     <motion.div
@@ -36,6 +37,7 @@ function Project({
       style={{
         scale: scrollProgress,
         opacity: opacityProgress,
+        rotateX: rotateProgress,
       }}
     >
       <section className="group bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative mb-3 sm:mb-8 last:mb-0 sm:h-[24rem] hover:bg-gray-200 transition">
