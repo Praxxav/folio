@@ -9,9 +9,9 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-   <div>
-   <main className="flex flex-col items-center">
-   
+   <div className="w-full">
+   <main className="flex w-full flex-col items-center">
+
       <Intro />
       <SectionDivider />
       <About />
@@ -20,7 +20,7 @@ export default function Home() {
       <Experience />
       <Certifications />
       <Contact />
-    
+
     </main>
    </div>
   );

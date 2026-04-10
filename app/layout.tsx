@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Headers } from "../components/header";
 import { Inter } from "next/font/google";
@@ -10,8 +10,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Pranav Kulkarni",
-  description: "Pranav Kulkarni — DevOps & SRE Engineer | AWS, Docker, Kubernetes, Prometheus, Grafana, CI/CD",
+  description: "Pranav Kulkarni â€” DevOps & SRE Engineer | AWS, Docker, Kubernetes, Prometheus, Grafana, CI/CD",
 };
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -25,7 +31,7 @@ export default function RootLayout({
     
       </head>
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 h-[6000px]`}
+        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 min-h-screen overflow-x-hidden`}
       >
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
@@ -37,3 +43,4 @@ export default function RootLayout({
     </html>
   )
 }
+

@@ -131,7 +131,7 @@ export default function Contact() {
         <section
             ref={ref}
             id='contact'
-            className='mb-28 max-w-[68rem] scroll-mt-28 sm:mb-40 relative px-4'
+            className='mb-28 w-full max-w-[68rem] scroll-mt-28 sm:mb-40 relative px-4'
         >
             {/* ── Ambient background effects ── */}
             <div className='absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-radial from-teal-500/8 via-blue-500/5 to-transparent rounded-full blur-3xl pointer-events-none' />

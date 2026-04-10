@@ -17,7 +17,7 @@ export default function Intro() {
     const heroScale = useTransform(scrollY, [0, 400], [1, 0.95]);
 
     return (
-        <section ref={ref} id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
+        <section ref={ref} id='home' className='mb-28 w-full max-w-[50rem] px-4 text-center sm:mb-0 scroll-mt-[100rem]'>
             <motion.div
                 style={{ opacity: heroOpacity, y: heroY, scale: heroScale }}
             >

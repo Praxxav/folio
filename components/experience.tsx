@@ -9,9 +9,8 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 
 export default function Experience() {
-  console.log(experiencesData)
   return (
-    <section id="experience" >
+    <section id="experience" className="mb-28 w-full max-w-[68rem] scroll-mt-28 px-4 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline >
         {

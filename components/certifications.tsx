@@ -11,7 +11,7 @@ import { BsBoxArrowUpRight } from 'react-icons/bs'
 export default function Certifications() {
     const { ref } = useSectionInView("Experience", 0.5);
     return (
-        <section ref={ref} className='mb-28 max-w-[53rem] scroll-my-28 text-center sm:mb-40'>
+        <section ref={ref} className='mb-28 w-full max-w-[53rem] scroll-my-28 px-4 text-center sm:mb-40'>
             <SectionHeading>
                 Certifications
             </SectionHeading>
