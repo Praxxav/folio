@@ -63,7 +63,7 @@ export default function About() {
     { label: 'GPA', value: '8.05', gradient: 'from-blue-500 to-cyan-400' },
     { label: 'Cloud', value: 'AWS', gradient: 'from-teal-500 to-emerald-400' },
     { label: 'Status', value: 'Open', gradient: 'from-green-500 to-emerald-400' },
-    { label: 'Focus', value: 'SRE', gradient: 'from-violet-500 to-purple-400' },
+    { label: 'Focus', value: 'Devops/SRE', gradient: 'from-violet-500 to-purple-400' },
   ];
 
   const highlights = [
