@@ -112,7 +112,7 @@ export const projectsData = [
     {
         title: "AWS Auto Scaling + Load Balancer",
         description:
-            "Designed and deployed Auto Scaling Group (ASG) with EC2 behind Application Load Balancer (ALB). Implemented dynamic scaling policies using CloudWatch alarms, enabling automatic scaling based on CPU load. Improved system fault tolerance and availability under varying traffic conditions.",
+            "Designed and deployed an Auto Scaling Group (ASG) with EC2 behind an Application Load Balancer (ALB). Implemented dynamic scaling using CloudWatch alarms based on CPU load, improving system availability and fault tolerance",
         tags: ["AWS EC2", "ASG", "ALB", "CloudWatch"],
         imageUrl: prop,
         link: "",
