@@ -182,6 +182,19 @@ export default function About() {
                     </p>
 
                     <p>
+                      <span className='text-gray-500'>{'//'} Prelexa – AI Collaboration Platform</span>
+                      <br />
+                      Built an{' '}
+                      <span className='text-violet-400 font-semibold'>AI-powered multi-tenant platform</span>{' '}
+                      with Gemini API, real-time{' '}
+                      <span className='text-blue-400'>WebSocket video chat</span>,{' '}
+                      <span className='text-teal-400'>RBAC</span>, and cron-based credit management.{' '}
+                      Dockerized with{' '}
+                      <span className='text-emerald-400 font-semibold'>CI/CD pipelines</span>,{' '}
+                      deployed on Vercel + Render.
+                    </p>
+
+                    <p>
                       <span className='text-gray-500'>{'//'} Expertise</span>
                       <br />
                       <span className='text-teal-400'>Cloud &amp; Systems Engineering</span>{' '}
@@ -257,23 +270,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Passion Quote */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
-            className='relative bg-gradient-to-br from-gray-950 to-gray-900 rounded-xl p-5 border border-gray-800/50 overflow-hidden'
-          >
-            <div className='absolute top-0 right-0 w-20 h-20 bg-teal-500/10 rounded-full blur-2xl' />
-            <p className='text-gray-400 text-sm italic leading-relaxed relative'>
-              &ldquo;Passionate about{' '}
-              <span className='text-teal-400 not-italic font-semibold'>cloud-native technologies</span>,{' '}
-              <span className='text-blue-400 not-italic font-semibold'>infrastructure automation</span>, and ensuring{' '}
-              <span className='text-emerald-400 not-italic font-semibold'>maximum uptime</span>{' '}
-              for mission-critical applications.&rdquo;
-            </p>
-          </motion.div>
+
         </div>
       </div>
     </motion.section>

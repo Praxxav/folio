@@ -2,7 +2,7 @@ import React from "react";
 import { FaAws, FaLock, FaDocker } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
 import { FaBarsProgress, FaBlog } from "react-icons/fa6";
-import { SiPrometheus } from "react-icons/si";
+import { SiPrometheus, SiKubernetes } from "react-icons/si";
 
 import paytmSingup from "@/public/Paytm_singup.png";
 import nural from "@/public/nginx.png";
@@ -11,7 +11,9 @@ import seed from "@/public/php-encryption.jpg";
 import prop from "@/public/auto.png";
 import rtsp from "@/public/prom.png";
 import doc from "@/public/ecs.png";
-
+import eksAlb from "@/public/eks_alb.png";
+import prelexa from "@/public/prelexa.png";
+import prescale from "@/public/prescale.png";
 
 export const links = [
     { name: "Home", hash: "#home" },
@@ -109,6 +111,24 @@ export const projectsData = [
     // ============================================================
     // NEW DEVOPS & SRE PROJECTS
     // ============================================================
+    {
+        title: "Scalable Backend on AWS EKS with ALB Ingress",
+        description:
+            "Deployed scalable backend on EKS with 5 replicas using Deployments, Services & ALB Ingress for high availability. Containerized apps with Docker in a cloud-native environment.",
+        tags: ["AWS EKS", "Kubernetes", "Docker", "ALB Ingress", "Load Balancing"],
+        imageUrl: eksAlb,
+        link: "",
+        githuburl: "https://github.com/Praxxav/eks-with-fargate-and-ingress/"
+    },
+    {
+        title: "Prelexa – AI Collaboration Platform",
+        description:
+            "Built AI-powered multi-tenant platform with Gemini API, real-time WebSocket video chat, RBAC, and cron-based credit management. Dockerized with CI/CD, deployed on Vercel + Render.",
+        tags: ["Docker", "CI/CD", "WebSocket", "Gemini API", "Vercel", "Render"],
+        imageUrl: prescale,
+        link: "https://www.prescalelabs.com",
+        githuburl: "https://github.com/Praxxav/prelexa-fe"
+    },
     {
         title: "AWS Auto Scaling + Load Balancer",
         description:

@@ -41,11 +41,11 @@ function Project({
       }}
     >
       <section className="group mx-auto w-full max-w-[42rem] bg-gray-100 border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative mb-3 sm:mb-8 last:mb-0 sm:h-[24rem] hover:bg-gray-200 transition">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[20rem]">
+        <div className="pt-4 pb-5 px-5 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[20rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+          <p className="mt-2 leading-relaxed text-gray-700 text-sm">{description}</p>
 
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          <ul className="flex flex-wrap mt-3 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] 
@@ -58,16 +58,18 @@ function Project({
             ))}
           </ul>
 
-          {/* GitHub and Live links below tags */}
-          <div className="flex gap-4 mt-4">
+          {/* GitHub and Live links */}
+          <div className="flex gap-3 mt-3">
             {githuburl && (
               <a
                 href={githuburl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-gray-700 hover:text-black transition"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium
+                bg-gray-800 text-white rounded-full hover:bg-black 
+                transition hover:scale-105 hover:shadow-md"
               >
-                <BsGithub className="text-lg" />
+                <BsGithub className="text-sm" />
                 GitHub
               </a>
             )}
@@ -76,9 +78,11 @@ function Project({
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-gray-700 hover:text-black transition"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium
+                bg-blue-600 text-white rounded-full hover:bg-blue-700 
+                transition hover:scale-105 hover:shadow-md"
               >
-                <BsBoxArrowUpRight className="text-lg" />
+                <BsBoxArrowUpRight className="text-sm" />
                 Live
               </a>
             )}
