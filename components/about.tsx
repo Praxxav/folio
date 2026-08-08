@@ -60,15 +60,15 @@ export default function About() {
   const { shown: cmdText, done: cmdDone } = useTyping(cmd, 40, 300, inView);
 
   const stats = [
-    { label: 'GPA', value: '8.05', gradient: 'from-blue-500 to-cyan-400' },
-    { label: 'Cloud', value: 'AWS', gradient: 'from-teal-500 to-emerald-400' },
-    { label: 'Status', value: 'Open', gradient: 'from-green-500 to-emerald-400' },
-    { label: 'Focus', value: 'Devops/SRE', gradient: 'from-violet-500 to-purple-400' },
+    { label: 'Role', value: 'DevOps I', gradient: 'from-blue-500 to-cyan-400' },
+    { label: 'Cloud', value: 'Azure', gradient: 'from-teal-500 to-emerald-400' },
+    { label: 'GPA', value: '8.05', gradient: 'from-green-500 to-emerald-400' },
+    { label: 'Focus', value: 'SRE', gradient: 'from-violet-500 to-purple-400' },
   ];
 
   const highlights = [
-    { text: 'DevOps & SRE Engineer', color: 'text-teal-400' },
-    { text: 'Recent 2026 Graduate — I²IT, Pune', color: 'text-blue-400' },
+    { text: 'DevOps Engineer I @ Aleph Technologies', color: 'text-teal-400' },
+    { text: 'B.E. Information Technology — I²IT, Pune (2026)', color: 'text-blue-400' },
     { text: 'Ex-Trainee @ StratVeda Technologies', color: 'text-emerald-400' },
     { text: 'Ex-SDE Intern @ Skylark Labs', color: 'text-purple-400' },
   ];
@@ -156,18 +156,31 @@ export default function About() {
                     <p>
                       <span className='text-gray-500'>{'//'} Background</span>
                       <br />
-                      Hands-on experience in building{' '}
+                      Currently{' '}
+                      <span className='text-emerald-400 font-semibold'>DevOps Engineer I at Aleph Technologies</span>,
+                      building{' '}
                       <span className='text-teal-400 font-semibold'>scalable cloud infrastructure</span>{' '}
-                      and automating delivery pipelines. Recent{' '}
-                      <span className='text-blue-400 font-semibold'>2026 graduate</span>{' '}
-                      with B.E. in Information Technology from{' '}
+                      and automating delivery pipelines. B.E. in Information Technology from{' '}
                       <span className='text-white font-medium'>I²IT, Pune</span>{' '}
-                      <span className='text-gray-500'>(GPA: 8.05)</span>.{' '}
-                      <span className='text-emerald-400 font-semibold'>Actively seeking DevOps &amp; SRE roles</span>.
+                      <span className='text-gray-500'>(GPA: 8.05)</span>.
                     </p>
 
                     <p>
-                      <span className='text-gray-500'>{'//'} Experience</span>
+                      <span className='text-gray-500'>{'//'} Current</span>
+                      <br />
+                      At{' '}
+                      <span className='text-white font-medium'>Aleph Technologies</span>:{' '}
+                      working on{' '}
+                      <span className='text-blue-400 font-semibold'>Microsoft Azure</span>{' '}
+                      — containerized workloads on{' '}
+                      <span className='text-teal-400'>AKS</span>,{' '}
+                      <span className='text-teal-400'>Azure DevOps pipelines</span>,{' '}
+                      <span className='text-purple-400'>observability with Azure Monitor</span>, and production
+                      reliability from deploy to incident response.
+                    </p>
+
+                    <p>
+                      <span className='text-gray-500'>{'//'} Previously</span>
                       <br />
                       At{' '}
                       <span className='text-white font-medium'>StratVeda Technologies</span>:{' '}
@@ -198,7 +211,7 @@ export default function About() {
                       <span className='text-gray-500'>{'//'} Expertise</span>
                       <br />
                       <span className='text-teal-400'>Cloud &amp; Systems Engineering</span>{' '}
-                      — Auto Scaling HA systems on AWS,{' '}
+                      — Azure day to day, AWS from hands-on project work,{' '}
                       <span className='text-purple-400'>Monitoring &amp; Observability</span>{' '}
                       with SLI/SLO, CI/CD with GitHub Actions.
                     </p>
@@ -207,7 +220,7 @@ export default function About() {
                       <span className='text-gray-500'>{'//'} Stack</span>
                       <br />
                       <span className='inline-flex flex-wrap gap-1.5 mt-1'>
-                        {['AWS', 'Docker', 'Kubernetes', 'Prometheus', 'Grafana', 'Linux', 'Python', 'CI/CD'].map((t) => (
+                        {['Azure', 'AKS', 'Azure DevOps', 'Docker', 'Kubernetes', 'Helm', 'Prometheus', 'Grafana', 'Linux', 'Python', 'AWS'].map((t) => (
                           <span key={t} className='px-2 py-0.5 bg-gray-800/80 text-teal-300 text-xs rounded-md border border-gray-700/50'>
                             {t}
                           </span>
@@ -247,10 +260,10 @@ export default function About() {
             <h3 className='text-xs text-gray-400 uppercase tracking-[0.2em] font-bold mb-3'>System Status</h3>
             <div className='space-y-2.5'>
               {[
-                { label: 'Availability', status: 'Open to work', online: true },
+                { label: 'Currently', status: 'Aleph Technologies', online: true },
+                { label: 'Role', status: 'DevOps Engineer I', online: true },
                 { label: 'Location', status: 'Pune, India', online: true },
                 { label: 'Response Time', status: '< 24 hours', online: true },
-                { label: 'Preferred Role', status: 'DevOps / SRE', online: true },
               ].map((item, i) => (
                 <motion.div
                   key={i}

@@ -2,7 +2,7 @@ import React from "react";
 import { FaAws, FaLock, FaDocker } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
 import { FaBarsProgress, FaBlog } from "react-icons/fa6";
-import { SiPrometheus, SiKubernetes } from "react-icons/si";
+import { SiPrometheus, SiKubernetes, SiMicrosoftazure } from "react-icons/si";
 
 import paytmSingup from "@/public/Paytm_singup.png";
 import nural from "@/public/nginx.png";
@@ -30,6 +30,14 @@ export const links = [
 // ============================================================
 
 export const experiencesData = [
+    {
+        title: "DevOps Engineer I, Aleph Technologies",
+        location: "Pune, Maharashtra, India",
+        description:
+            "Building and operating cloud infrastructure end to end on Microsoft Azure — containerized workloads on AKS, Azure DevOps CI/CD pipelines, infrastructure automation, and observability with Azure Monitor. Own deployment reliability, monitoring, and incident response for production services.",
+        icon: React.createElement(SiMicrosoftazure),
+        date: "Present",
+    },
     {
         title: "Trainee, StratVeda Technologies Pvt Ltd",
         location: "Pune, Maharashtra, India",
@@ -237,8 +245,10 @@ export const projectsData = [
 // DEVOPS & SRE SKILLS
 // ============================================================
 export const skillsData = [
+    "Azure (AKS, App Service, VNet, Load Balancer, Blob Storage, Functions, Azure Monitor)",
+    "Azure DevOps", "Azure Pipelines",
     "AWS (EC2, VPC, ALB, ECS, EKS, S3, Lambda, CloudFront, CloudWatch)",
-    "GCP", "Azure",
+    "GCP",
     "Linux/Unix", "Bash Scripting", "System Monitoring", "Log Analysis",
     "JavaScript", "TypeScript", "Python",
     "Docker", "Kubernetes", "Helm",

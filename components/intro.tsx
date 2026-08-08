@@ -37,25 +37,29 @@ export default function Intro() {
                                 height="192"
                                 priority={true}
                                 quality="95"
-                                className=' object-cover h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl'
+                                className='object-cover h-28 w-28 rounded-full border-[0.3rem] border-white shadow-xl ring-1 ring-black/5'
                             />}
                         </motion.div>
-                        <motion.span className='absolute bottom-0 right-0 text-4xl'
-                            initial={{ opacity: 0, scale: 0 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{
-                                type: 'spring',
-                                stiffness: 125,
-                                delay: 0.1,
-                                duration: 0.7
-                            }}
-                        >
-                            👋
-                        </motion.span>
                     </div>
                 </div>
+
+                {/* Current role badge */}
+                <motion.div
+                    className='mt-5 flex justify-center'
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.15 }}
+                >
+                    <span className='inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 backdrop-blur px-4 py-1.5 text-[0.7rem] sm:text-xs font-semibold uppercase tracking-[0.18em] text-gray-700 shadow-sm'>
+                        <span className='relative flex h-2 w-2'>
+                            <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75' />
+                            <span className='relative inline-flex h-2 w-2 rounded-full bg-emerald-500' />
+                        </span>
+                        DevOps Engineer I @ Aleph Technologies
+                    </span>
+                </motion.div>
                 <motion.h1
-                    className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
+                    className="mb-10 mt-6 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
                     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
@@ -72,15 +76,14 @@ export default function Intro() {
                     <span className="font-bold inline-block bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 text-transparent bg-clip-text whitespace-nowrap animate-gradient-x">
                         DevOps & SRE Engineer
                     </span>
-                    <span className="block mt-1 text-sm text-gray-500 dark:text-gray-400 font-light tracking-[0.25em] uppercase">
-                        (Ex - Full Stack Developer)
+                    <span className="block mt-2 text-xs sm:text-sm text-gray-500 font-light tracking-[0.25em] uppercase">
+                        Azure · Kubernetes · CI/CD · Observability
                     </span>
-                    <span className="block mt-4 text-lg sm:text-2xl font-medium text-gray-700">
-                        Architecting{" "}
+                    <span className="block mt-5 text-base sm:text-xl font-medium text-gray-700 max-w-2xl mx-auto">
+                        I build{" "}
                         <span className="font-bold text-gray-900 border-b-2 border-blue-500">scalable infrastructure</span>,{" "}
-                        automating workflows, and ensuring{" "}
-                        <span className="font-bold text-gray-900 border-b-2 border-teal-500">high availability</span>{" "}
-                        systems.
+                        automate delivery pipelines, and keep{" "}
+                        <span className="font-bold text-gray-900 border-b-2 border-teal-500">production reliable</span>.
                     </span>
                 </motion.h1>
 

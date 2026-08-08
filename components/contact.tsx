@@ -67,6 +67,11 @@ function TerminalLine({ command, output, delay, inView }: {
 export default function Contact() {
     const { ref } = useSectionInView("Contact", 0.5);
     const [isInView, setIsInView] = useState(false);
+    // Client-only: rendering the date during SSR causes a hydration mismatch
+    const [loginDate, setLoginDate] = useState('');
+    useEffect(() => {
+        setLoginDate(new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }));
+    }, []);
 
     const contactItems = [
         {
@@ -123,7 +128,7 @@ export default function Contact() {
 
     const terminalLines = [
         { command: 'whoami', output: 'pranav-kulkarni // DevOps & SRE Engineer' },
-        { command: 'cat /etc/status', output: '✅ Open to opportunities' },
+        { command: 'cat /etc/status', output: 'DevOps Engineer I @ Aleph Technologies' },
         { command: 'uptime', output: '24/7 — always building, always shipping' },
     ];
 
@@ -205,7 +210,7 @@ export default function Contact() {
  ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╗   ██║
   ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝`}
                                 </pre>
-                                <span className='text-gray-600'>Last login: {new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })} on ttys001</span>
+                                <span className='text-gray-600'>Last login: {loginDate} on ttys001</span>
                             </motion.div>
 
                             {/* Typed terminal lines */}
